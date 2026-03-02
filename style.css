@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    background:#000;
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-container::after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 200px;
+}
+/** logo **/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-left: 200px;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding-right: 200px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #FFD700;
+    text-shadow: 0 0 15px #FFD700;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    transform : scale(1.1);
+}
+
+/* songlist */
+
+.main-list{
+    margin-right: 200px;
+    margin-left: 200px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+      width: 100%;
+      max-width: 400px;  
+}
+
+ h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #FFD700;
+      text-shadow: 0 0 15px #FFD700;
+}
+
+.big-container{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    padding-bottom: 200px;
+}
+
+.song h4{
+    color: #FFD700;
+    text-shadow: 0 0 15px #00FFFF;
+    font-size: 20px;
+}
+
+.store{
+    padding-bottom: 100px;
+}
+
+button {
+    width: 300px;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #22D3EE;
+    color: #FFD700;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover{
+    background: #06B6D4;
+    box-shadow: 0 0 15px #22D3EE;
+}
+
+/* footer */
+
+.head-foot{
+    background:#000;
+}
